@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("./partials/head.ejs") %>
+    <link rel="stylesheet" href="./css/report.css">
+</head>
+<body>
+    <div id="main-body">
+        <%- include("./partials/header.ejs") %>
+        <%- include("./partials/nav.ejs") %>
+        <div id="about-body">
+            <h1>GENERATE REPORT</h1>
+        </div>
+        <div id="report-body">
+            <span id="dateSpan">DATE:</span>
+            <input id="dateInput" type="text" placeholder="yyyy/mm/dd">
+            <span id="filenameSpan">FILENAME:</span>
+            <input id="filenameInput" type="text" placeholder="">
+            <button id="create-btn">CREATE</button>
+        </div>
+    </div>
+    <script src="./js/about.js"></script>
+</body>
+</html>

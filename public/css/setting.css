@@ -1,0 +1,267 @@
+/* HOME-BTN */
+#menu-body > #setting > a > button {
+    background-color: var(--table-body-bg);
+    color: #000000;
+}
+#menu-body > #setting > a > button > span {
+    text-decoration: underline 3px;
+}
+/* SETTING-BODY */
+#setting-body {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    background-color: var(--menu-body-bg);
+    height: 77vh;
+    width: 100vw;
+}
+/* SETTING HEADER */
+#setting-body > h1 {
+    grid-row: 1/2;
+    grid-column: 1/11;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem auto 1.5rem;
+}
+/*SETTING MENU-BODY */
+#setting-menu {
+    grid-row: 2/8;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    border-right: 2px solid #000000;
+}
+#setting-menu > button {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 1rem;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: var(--header-body-bg);
+}
+#setting-menu > button:nth-child(1) {
+    background-color: var(--table-body-bg);
+}
+#setting-menu > button:nth-child(2) {
+    background-color: var(--header-body-bg);
+}
+
+/*SETTING FORM-BODY */
+#form-main-body {
+    grid-row: 2/9;
+    grid-column: 2/11;
+}
+#form-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 6vh);
+    align-items: center;
+    row-gap: 5px;
+}
+#form-body > div {
+    font-size: larger;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+}
+#form-body > div > label {
+    grid-column: 1/3;
+    font-size: large;
+    text-align: end;
+}
+#form-body > div {
+    gap: 0 2rem;
+}
+
+#form-body > div > .input-body,
+#form-body > div > input,
+#form-body > div > select {
+    grid-column: 3/10;
+    height: 2rem;
+    font-size: large;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    text-transform: capitalize;
+}
+#form-body > div > #email-input,
+#form-body > div > #plate-num-input {
+    text-transform: lowercase;
+}
+#id {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#name {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#gender {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+#address {
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+#contact {
+    grid-column: 1/2;
+    grid-row: 7/8;
+}
+#email {
+    grid-column: 1/2;
+    grid-row: 8/9;
+}
+#work {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#department {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#school {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#vehicle-type {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+#plate-num {
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+#form-body > div > .input-body {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 0;
+}
+.input-body > input:nth-child(1) {
+    font-size: large; 
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    grid-row: 1/2;
+    margin: 0;
+    text-transform: capitalize;
+}
+.input-body > input:nth-child(2) {
+    font-size: large;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    grid-row: 2/3;
+    margin: 10px 0 0;
+    text-transform: capitalize;
+}
+.input-body > input:nth-child(3) {
+    font-size: large;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    grid-row: 3/4;
+    margin: 10px 0 0;
+    text-transform: capitalize;
+}
+#buttons {
+    position: absolute;
+    top: 95vh;
+    left: 60vw;
+}
+#submit-btn {
+    position: absolute;
+    width: 8rem;
+    left: 20vw;
+    height: 2rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+#cancel-btn {
+    position: absolute;
+    left: 10vw;
+    width: 8rem;
+    height: 2rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+#submit-btn:hover,
+#cancel-btn:hover {
+    text-decoration: 3px underline;
+    background-color: var(--table-body-bg);
+    transition: 0.3s ease;
+    transition-property: text-decoration background-color;
+}
+
+/* SETTING EMPLOYEE-BODY */
+#employee-body {
+    display: none;
+    background-color: #919191;
+    grid-row: 2/9;
+    grid-column: 2/11;
+    overflow: auto;
+    padding: 5px;
+}
+#table-head,
+.table-body-row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: #c2c2c2;
+    text-align: center;
+    border-radius: 5px;
+}
+#table-head > span {
+    font-size: 1.5rem;
+}
+.table-body-row {
+    margin-top: 5px;
+}
+#table-head > span:first-child,
+.table-body-row > span:first-child {
+    grid-column: 1/3;
+}
+#table-head > span {
+    text-transform: uppercase;
+}
+.table-body-row > span {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+.table-body-row > span:first-child {
+    position: relative;
+}
+.info-btn {
+    position: absolute;
+    left: 1vw;
+    top: 2px;
+    border-radius: 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+    /* border: none; */
+}
+.table-body-row:hover {
+    background-color: #13db35;
+    transition: 0.5s ease;
+}
+
+.table-body-row > span:last-child {
+    text-transform: lowercase;
+}
+
+#table-body::-webkit-scrollbar {
+    width: 0.5vw;
+}
+#table-body::-webkit-scrollbar-thumb {
+    background-color: #0007;
+    border-radius: 5px;
+}
+#table-body::-webkit-scrollbar-thumb:hover {
+    background-color: #000;
+}
+#table-body::-webkit-scrollbar-track {
+    background-color: var(--menu-body-bg);
+    border-radius: 5px;
+}

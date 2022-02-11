@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("./partials/head.ejs") %>
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+    <div id="main-body">
+        <%- include("./partials/header.ejs") %>
+        <%- include("./partials/nav.ejs") %>
+        <div id="table-main-body">
+            <div id="table-head">
+                <span>Name</span>
+                <span>Work/Position</span>
+                <span>Plate No.</span>
+                <span>Time In</span>
+                <span>Date</span>
+            </div>
+            <div id="table-body"></div>
+        </div>
+        <%- include("./partials/popout.ejs") %>
+    </div>
+    <script src="./js/home.js"></script>
+</body>
+</html>

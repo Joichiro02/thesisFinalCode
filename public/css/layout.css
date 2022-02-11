@@ -1,0 +1,185 @@
+:root {
+    --header-body-bg: #13db35;
+    --menu-body-bg: #919191;
+    --table-body-bg: #c2c2c2;
+    font-family: Franklin Gothic Book;
+    font-size: 16px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main-body {
+    height: 100vh;
+    width: 100vw;
+}
+/* HEADER-BODY */
+#header-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    width: 100vw;
+    text-align: center;
+    background-color: var(--header-body-bg);
+}
+#header-body > img {
+    margin: 0;
+    width: 50px;
+    height: 80px;
+}
+#header-body > h1 {
+    display: inline-block;
+    align-self: center;
+    font-size: 3rem;
+    word-spacing: 0.5rem;
+}
+
+/* MENU-BODY */
+#menu-body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 8vh;
+    width: 100vw;
+    background-color: var(--menu-body-bg);
+}
+#menu-body > span {
+    margin: auto 1rem;
+}
+
+#menu-body > span > a > button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    outline: none;
+    text-transform: uppercase;
+    background-color: var(--header-body-bg);
+}
+#menu-body > span > a > button:hover {
+    background-color: var(--table-body-bg);
+    color: #000000;
+    transition: 0.5s ease;
+    transition-property: background-color;
+}
+#menu-body > span > a > button:hover > span {
+    text-decoration: 3px underline;
+}
+
+#inputs {
+    width: 46.5vw;
+    margin-left: 10rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#fromDatabase-btn{
+    margin-left: 2rem;
+}
+#clear-btn {
+    margin-left: .1rem;
+}
+#rfid > input,
+#rfid > button {
+    border-radius: 5px;
+}
+#rfid > input,
+#rfid > button {
+    height: 30px;
+    outline: none;
+    padding: 5px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+#rfid > input{
+    text-transform: uppercase;
+    width: 20vw;
+    text-transform: lowercase;
+}
+#rfid > button:nth-child(2):hover,
+#rfid > button:nth-child(3):hover {
+    background-color: var(--table-body-bg);
+    transition: 0.5s ease;
+    transition-property: background-color;
+    text-decoration: 3px underline;
+}
+
+/*DRIVER INFO POP UP*/
+.driver-info {
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 35vw;
+    height: 58vh;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    background-color: #59eeda;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.driver-info > button:first-child {
+    background-color: #db4141;
+    position: relative;
+    left: 31vw;
+    transform: rotateZ(45deg);
+    border-radius: 50%;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+fieldset {
+    height: 50vh;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    padding: 0 5px;
+    border: 5px solid brown;
+    border-radius: 10px;
+}
+fieldset > span:not(.driver-info-plate) {
+    text-transform: capitalize;
+}
+legend {
+    text-transform: uppercase;
+}
+.driver-info-name,
+.driver-info-work,
+.driver-info-plate,
+.driver-info-time,
+.driver-info-date {
+    position: relative;
+    margin-top: 25px;
+    text-indent: 3rem;
+}
+.driver-info-name::before,
+.driver-info-work::before,
+.driver-info-plate::before,
+.driver-info-time::before,
+.driver-info-date::before {
+    top: -20px;
+    left: -2rem;
+    position: absolute;
+    font-weight: 600;
+}
+.driver-info-name::before {
+    content: 'Name:';
+}
+
+.driver-info-work::before {
+    content: 'Work:';
+}
+
+.driver-info-plate::before {
+    content: 'Plate-No.:';
+}
+
+.driver-info-time::before {
+    content: 'Time:';
+}
+
+.driver-info-date::before {
+    content: 'Date:';
+}
+

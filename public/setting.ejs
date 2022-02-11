@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("./partials/head.ejs") %>
+    <link rel="stylesheet" href="./css/setting.css">
+</head>
+<body>
+    <div id="main-body">
+        <%- include("./partials/header.ejs") %>
+        <%- include("./partials/nav.ejs") %>
+        <div id="setting-body">
+            <h1>registration form</h1>
+            <div id="setting-menu">
+                <button id="register-btn">Register</button>
+                <button id="employee-btn">Registered</button>
+            </div>
+            <div id="form-main-body">
+                <form action="" id="form-body">
+                    <div id="id">
+                        <label for="id">I.D. No.</label>
+                        <input
+                            type="text"
+                            name="id"
+                            id="id-input"
+                            placeholder="rfid"
+                            autocomplete="off"
+                        />
+                    </div>
+                    <div id="name">
+                        <label for="name">Name</label>
+                        <div class="input-body">
+                            <input
+                                type="text"
+                                name="lastname"
+                                id="lastname-input"
+                                placeholder="lastname"
+                                autocomplete="off"
+                            />
+                            <input
+                                type="text"
+                                name="firstname"
+                                id="firstname-input"
+                                placeholder="firstname"
+                                autocomplete="off"
+                            />
+                            <input
+                                type="text"
+                                name="middlename"
+                                id="middlename-input"
+                                placeholder="middlename"
+                                autocomplete="off"
+                            />
+                        </div>
+                    </div>
+                    <div id="gender">
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender-input">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div id="address">
+                        <label for="address">Address</label>
+                        <input
+                            type="text"
+                            name="address"
+                            id="address-input"
+                            placeholder="address"
+                            autocomplete="off"
+                        />
+                    </div>
+                    <div id="contact">
+                        <label for="contact">Contact</label>
+                        <input
+                            type="text"
+                            name="contact"
+                            id="contact-input"
+                            placeholder="09999999999"
+                            autocomplete="off"
+                        />
+                    </div>
+                    <div id="email">
+                        <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email-input"
+                            placeholder="email"
+                            autocomplete="off"
+                        />
+                    </div>
+                    <div id="work">
+                        <label for="work">Work/Student</label>
+                        <input
+                            type="text"
+                            name="work"
+                            id="work-input"
+                            autocomplete="off"
+                        />
+                    </div>
+                    <div id="department">
+                        <label for="department">Department</label>
+                        <input
+                            type="text"
+                            name="department"
+                            id="department-input"
+                            autocomplete="off"
+                        />
+                    </div>
+                    <div id="school">
+                        <label for="school">School</label>
+                        <input name="school" id="school-input" autocomplete="off">
+                    </div>
+                    <div id="vehicle-type" class="vehicle-info">
+                        <label for="vehicle-type">Vehicle Type</label>
+                        <input name="vehicle-type" id="vehicle-type-input" autocomplete="off">
+                    </div>
+                    <div id="plate-num" class="vehicle-info">
+                        <label for="plate-num">Plate No.</label>
+                        <input
+                            type="text"
+                            name="plate-num"
+                            id="plate-num-input"
+                            autocomplete="off"
+                        />
+                    </div>
+                    <div id="buttons">
+                        <button id="submit-btn">Submit</button>
+                        <button id="cancel-btn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <div id="employee-body">
+                <div id="table-head">
+                    <span>Name</span>
+                    <span>Address</span>
+                    <span>Work</span>
+                    <span>School</span>
+                    <span>Email</span>
+                </div>
+                <div id="table-body"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/setting.js"></script>
+</body>
+</html>

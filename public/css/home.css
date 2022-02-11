@@ -1,0 +1,123 @@
+:root {
+    --header-bg: #f6ffa1;
+}
+/* HOME-BTN */
+#menu-body > #home > a > button {
+    background-color: var(--table-body-bg);
+    color: #000000;
+}
+#menu-body > #home > a > button > span {
+    text-decoration: underline 3px;
+}
+
+/* TABLE-BODY */
+#table-main-body {
+    height: 77vh;
+    width: 100vw;
+    background-color: var(--menu-body-bg);
+}
+#table-head {
+    position: relative;
+    top: 1rem;
+    display: grid;
+    background-color: var(--menu-body-bg);
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-items: baseline;
+    border-radius: 5px;
+    width: 99vw;
+    font-size: x-large;
+    margin: 0 auto;
+}
+#table-head > span {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#table-head > span:first-child,
+.table-body-row > span:nth-child(3) {
+    grid-column: 1/3;
+}
+#table-body {
+    position: relative;
+    top: 1.5rem;
+    padding: auto;
+    background-color: var(--header-bg);
+    border-radius: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 67vh;
+    width: calc(99vw);
+    margin: auto auto;
+}
+#table-body::-webkit-scrollbar {
+    width: 0.5vw;
+}
+#table-body::-webkit-scrollbar-thumb {
+    background-color: #0007;
+    border-radius: 5px;
+}
+#table-body::-webkit-scrollbar-thumb:hover {
+    background-color: #000;
+}
+#table-body::-webkit-scrollbar-track {
+    background-color: var(--menu-body-bg);
+    border-radius: 5px;
+}
+.table-body-row {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-items: baseline;
+    background-color: var(--table-body-bg);
+    border-radius: 5px;
+    margin: 3px;
+    border: 2px solid var(--table-body-bg);
+}
+.table-body-row > span {
+    padding: 5px 1px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+.table-body-row > span:nth-child(3) {
+    text-transform: capitalize;
+}
+.table-body-row:hover {
+    background-color: var(--header-bg);
+    border: 2px solid var(--table-body-bg);
+    transition: 0.3s ease;
+    cursor: default;
+}
+.table-body-row > button:nth-child(1) {
+    position: absolute;
+    left: 0.5rem;
+    top: 5px;
+    width: 80px;
+    height: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: #f37979;
+}
+.table-body-row > button:nth-child(1):hover {
+    font-weight: 600;
+    /* color: var(--menu-body-bg); */
+}
+.table-body-row > button:nth-child(2) {
+    position: absolute;
+    left: 6rem;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: var(--header-body-bg);
+}
+.table-body-row > button > i {
+    font-weight: 900;
+    font-size: 15px;
+    color: #ffffff;
+}

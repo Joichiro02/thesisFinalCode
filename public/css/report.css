@@ -1,0 +1,54 @@
+#menu-body > #report > a > button {
+    background-color: var(--table-body-bg);
+    color: #000000;
+}
+#menu-body > #report > a > button > span {
+    text-decoration: underline 3px;
+}
+#main-body{
+    background-color: #919191;
+}
+#report-body{
+    margin-top: 25vh;
+    margin-left: 10vw;
+}
+#report-body > span,
+#report-body > input {
+    font-size: 30px;
+}
+#report-body > #filenameInput {
+    margin-left: 3vw;
+}
+#report-body > input {
+    margin-left: 2vw;
+    text-indent: 5px;
+    padding: 2px;
+}
+#report-body > #create-btn {
+    position: absolute;
+    top: 80vh;
+    left: 50vw;
+    transform: translate(-50%);
+    width: 120px;
+    height: 50px;
+    font-size: larger;
+    font-weight: 500;
+}
+#report-body > #create-btn:hover {
+    background-color: #13db35;
+}
+#report-body > #filenameSpan{
+    margin-left: 5vw;
+}
+/* REPORT-BODY */
+#about-body {
+    grid-column: 4/21;
+    grid-row: 2/11;
+    background-color: var(--table-body-bg);
+    padding: 10px;
+}
+#about-body > h1 {
+    background-color: var(--table-body-bg);
+    text-transform: uppercase;
+    text-align: center;
+}
